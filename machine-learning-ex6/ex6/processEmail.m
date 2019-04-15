@@ -100,11 +100,11 @@ while ~isempty(email_contents)
 
 
     % used for part1 of ex5_spam
-    %for i=1:length(vocabList)
-    %  if strcmp(str, vocabList(i)) == 1
-    %    word_indices = [word_indices, 1];
-    %  end
-    %end
+    for i=1:length(vocabList)
+      if strcmp(str, vocabList(i)) == 1
+        word_indices = [word_indices, i];
+      end
+    end
     
 
 

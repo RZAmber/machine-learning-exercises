@@ -17,7 +17,7 @@ sim = 0;
 %
 
 % used for part3 of ex6.m
-sim = exp(-sum((x1 - x2).^2) / (2*(sigma^2)));
+sim = exp(-sum((x1 - x2).^2) / (2*(sigma.^2)));
 
 
 

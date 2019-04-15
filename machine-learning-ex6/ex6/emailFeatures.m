@@ -49,9 +49,9 @@ x = zeros(n, 1);
 %
 
 %used for part2 of ex6_spam.m
-%for i=1:length(word_indices)
-%  x(word_indices(i)) = 1;
-%end
+for i=1:length(word_indices)
+  x(word_indices(i)) = 1;
+end
 
 
 

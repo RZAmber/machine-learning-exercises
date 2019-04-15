@@ -34,7 +34,7 @@ for i=1:n
     CurrentSigma = paras(j);
     model = svmTrain(X, y, CurrentC, @(x1, x2) gaussianKernel(x1, x2, CurrentSigma));
     prediction = svmPredict(model, Xval);
-    erros(i,j) = mean(double(prediction ~= yval));
+    errors(i,j) = mean(double(prediction ~= yval));
   end
 end
 
