@@ -20,7 +20,9 @@ S = zeros(n);
 %       number of examples).
 %
 
-
+%pac procedure. used for part2 of ex7_pca
+C_sigma = X' * X / m;
+[U,S,V] = svd(C_sigma);
 
 
 

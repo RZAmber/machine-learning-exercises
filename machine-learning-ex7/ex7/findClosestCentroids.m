@@ -21,6 +21,18 @@ idx = zeros(size(X,1), 1);
 % Note: You can use a for-loop over the examples to compute this.
 %
 
+% calculate c^(i) , i{1..K}. used for part1 of ex7.m
+
+for i = 1:size(X,1)
+  tempMin = Inf;
+  for j = 1:K
+    temp = sum((X(i,:) - centroids(j,:)).^2);
+    if temp  < tempMin
+      idx(i) = j;
+      tempMin = temp;
+    end
+  end
+end
 
 
 

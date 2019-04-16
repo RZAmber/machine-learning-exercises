@@ -18,7 +18,11 @@ Z = zeros(size(X, 1), K);
 %                    projection_k = x' * U(:, k);
 %
 
-
+% projection of data. used for part3 of ex7_pca
+U_reduce = U(:, 1:K);
+for i = 1:size(X,1)
+  Z(i,:) = X(i, :) * U_reduce;
+end
 
 
 % =============================================================
